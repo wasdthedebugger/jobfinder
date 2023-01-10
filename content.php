@@ -7,7 +7,7 @@
 
 <?php
 
-$posts_query = "SELECT * FROM jobs";
+$posts_query = "SELECT * FROM jobs WHERE DATEDIFF(NOW(), timestamp) < 7 ORDER BY timestamp ASC";
 if(isset($_GET['location'])){
 
 $posts_query = "SELECT * FROM jobs WHERE location = '".$_GET['location']."'";
@@ -39,7 +39,7 @@ function displayJobs($posts_query, $conn)
                 <div class="jobDesc">
                     <p><?php echo $data_row['jobdescription']; ?></p>
                 </div>
-            </div>
+            </div><br>
 
 <?php
 

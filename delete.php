@@ -6,7 +6,7 @@ require("conn.php");
 
 $id = $_GET['id'];
 
-$query = "DELETE ALL where id = $id;";
+$query = "DELETE FROM jobs WHERE id = $id;";
 
 $result = mysqli_query($conn, $query);
 
