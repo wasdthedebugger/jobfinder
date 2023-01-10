@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#navBar{
+    height: 40px;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.navBarElements{
+    height: 100%;
+    padding: 10px;
+    background-color: blue;
+}
+
+
+.navBarElements:hover{
+    background-color: green;
+    padding: 10px;
+    height: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.jobCard{
+    width: fit-content;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+a{
+    color: rgb(167, 44, 44);
+}
