@@ -1,2 +1,2 @@
-# thephpproject
-I dont know what I am doing but it works
+# Job Finder
+Users can search for jobs they are interested in while the employer adds in jobs.
