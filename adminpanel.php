@@ -16,12 +16,15 @@
     <?php require("header.php"); ?>
 
 
-    <form action="#" target="#" method="get">
-        <input type="text" name="location" id="" placeholder="Location Here">
+    <form action="#" target="#" method="get" id="form">
+        <input type="text" name="location" placeholder="Location Here" id="locationInput">
         <input type="submit" value="Search">
-    </form>
+</form>
+<br>
+<div class="notice">ADMIN PANEL</div>
+<br>
 
-    <br>
+<div id="main">
 
     <?php
 
@@ -44,45 +47,43 @@
 
             <div class="jobCard">
                 <div class="jobTitle">
-                    <h3><?php echo $data_row['jobname']; ?></h3>
+                    <h2><?php echo strtoupper($data_row['jobname']); ?></h2>
                 </div>
                 <div class="category">
-                    <h4><?php echo $data_row['category']; ?></h4>
+                    <h4>Category: <?php echo $data_row['category']; ?></h4>
                 </div>
                 <div class="location">
-                    <h4><?php echo $data_row['location']; ?></h4>
+                <h4><?php echo $data_row['location']; ?></h4>
                 </div>
                 <div class="jobDesc">
-                    <p><?php echo $data_row['jobdescription']; ?></p>
+                    Description: <p><?php echo $data_row['jobdescription']; ?></p>
                 </div>
                 <div class="status">
-                    <?php echo $data_row['status']; ?>
-                </div>
+                   Status: <?php echo $data_row['status']; ?>
+                </div><br>
                 <div class="actions">
                     <?php
                     if ($data_row['status'] == "public") {
                     ?>
-                        <a href="archive.php?id=<?php echo $data_row['id']; ?>"><button>Archive</button></a>
+                        <a href="archive.php?id=<?php echo $data_row['id']; ?>"><button class="btn btn-secondary">Archive</button></a>
                     <?php
                     } else {
                     ?>
-                        <a href="unarchive.php?id=<?php echo $data_row['id']; ?>"><button>Unarchive</button></a>
+                        <a href="unarchive.php?id=<?php echo $data_row['id']; ?>"><button class="btn btn-primary">Unarchive</button></a>
                     <?php
                     }
                     ?>
-                    <a href="delete.php?id=<?php echo $data_row['id']; ?>"><button>Delete</button></a>
+                    <a href="delete.php?id=<?php echo $data_row['id']; ?>"><button class="btn btn-danger">Delete</button></a>
 
                 </div>
             </div><br>
 
-    <?php
+            <?php
 
-        }
-    }
-
-    ?>
-
-    <br>
+}
+}
+?>
+</div>
 
 
 

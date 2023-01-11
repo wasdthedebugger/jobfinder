@@ -13,7 +13,7 @@
    
 <?php require("header.php"); ?>
 
-<h1>FAQ's Comming soon</h1>
+<div class="notice">FAQ COMING SOON</div><br>
 
 <?php require("footer.php"); ?>
 

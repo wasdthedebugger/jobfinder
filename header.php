@@ -1,8 +1,8 @@
 <header>
 <nav id="navBar">
-     <a href="index.php"><div class="navBarElements">Home</div></a>
-        <a href="faq.php"><div class="navBarElements">FAQ</div></a>
-       <a href="login.php"><div class="navBarElements">Login</div></a>
-      <a href="adminpanel.php"><div class="navBarElements">Admin Panel</div></a>
+     <div class="navBarElements"><a href="index.php">HOME</a></div>
+      <div class="navBarElements"><a href="faq.php">FAQ</a></div>
+      <div class="navBarElements"><a href="login.php">LOGIN</a></div>
+      <div class="navBarElements"><a href="adminpanel.php">ADMINPANEL</a></div>
 </nav>
 </header>

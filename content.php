@@ -1,9 +1,12 @@
-<form action="#" target="#" method="get">
-        <input type="text" name="location" id="" placeholder="Location Here">
+<form action="#" target="#" method="get" id="form">
+        <input type="text" name="location" placeholder="Location Here" id="locationInput">
         <input type="submit" value="Search">
 </form>
-
 <br>
+<div class="notice">JOB LISTING</div>
+<br>
+
+<div id="main">
 
 <?php
 
@@ -27,19 +30,22 @@ function displayJobs($posts_query, $conn)
 ?>
 
             <div class="jobCard">
-                <div class="jobTitle">
-                    <h3><?php echo $data_row['jobname']; ?></h3>
+            <div class="jobTitle">
+                    <h2><?php echo strtoupper($data_row['jobname']); ?></h2>
                 </div>
                 <div class="category">
-                    <h4><?php echo $data_row['category']; ?></h4>
+                    <h4>Category: <?php echo $data_row['category']; ?></h4>
                 </div>
                 <div class="location">
-                    <h4><?php echo $data_row['location']; ?></h4>
+                <h4><?php echo $data_row['location']; ?></h4>
                 </div>
                 <div class="jobDesc">
-                    <p><?php echo $data_row['jobdescription']; ?></p>
+                    Description: <p><?php echo $data_row['jobdescription']; ?></p>
                 </div>
-            </div><br>
+                <div class="status">
+                   Status: <?php echo $data_row['status']; ?>
+                </div>
+            </div>
 
 <?php
 
@@ -47,5 +53,4 @@ function displayJobs($posts_query, $conn)
     }
 }
 ?>
-
-<br>
+</div>

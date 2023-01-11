@@ -8,45 +8,105 @@ body{
 }
 
 #navBar{
-    height: 40px;
+    height: 50px;
     width: 100%;
-    background-color: red;
+    background-color: orange;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .navBarElements{
-    height: 100%;
+    display: flex;
+    align-items: center;
     padding: 10px;
-    background-color: blue;
+    height: 100%;
 }
 
 
 .navBarElements:hover{
-    background-color: green;
+    background-color: rgb(148, 97, 3);
     padding: 10px;
     height: 100%;
 }
 
+.navBarElements a{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+}
+
+.navBarElements a:hover{
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+}
+
 footer{
     width: 100%;
-    height: 40px;
-    background-color: gray;
+    height: 50px;
+    background-color: orange;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    margin-top: 10px;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .jobCard{
-    width: fit-content;
-    padding: 10px;
-    border: 5px solid black;
+    display: block;
+    margin: auto;
+    margin-bottom: 40px;
+    min-width: 300px;
+    padding: 20px;
+    border: 3px solid black;
+    border-radius: 7px;
+    background-color: rgba(201, 182, 147, 0.256);
 }
 
-a{
-    color: rgb(167, 44, 44);
+#main{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#form{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#locationInput{
+    width: 100%;
+}
+
+.notice{
+    width: 100%;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: orange;
+}
+
+a {
+    color: #c1d3e4;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#00A0C6; 
+    text-decoration:none; 
+    cursor:pointer;  
 }

@@ -1,3 +1,3 @@
 <footer>
-    <p>Copyright &copy 2023</p>
+    COPYRIGHT &copy 2023
 </footer>
